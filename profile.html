@@ -1,93 +1,191 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">  
-
-    <!-- https://getbootstrap.com/ -->
-
-    <title>PRAPAWIN</title>
-  </head> 
-<body style="background-color:#cccccc;">
-      <!-- bootstarp แถบบนหัวสุด -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-          <img src="images/favicon.ico" alt="" width="30" height="24" class="d-inline-block align-text-top">
-      PRAPAWIN
-            </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="profile.html">Profile</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Section
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="experiences.html">Experiences</a></li>
-                  <li><a class="dropdown-item" href="abilitis.html">Abilitis</a></li>
-                  <li><a class="dropdown-item" href="projects.html">Projects</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-      <br>
-      <h1 class="text-center"> Profile </h1>
-      <hr>
-      <br>
-      <!-- bootstrap จัดหน้ากึ่งกลาง-->
-        <div class="container-2">
-            <div class="row align-items-start">
-              <div class="col">
-                <h2 class="text-center">About Me</h2>
-                <p class="container-fluid">
-                    Hello, my name is Prapawin chanviboonsi, 19 years old, now studying at Bangkok University. 
-                    I'm funny, but not always friendly. Likes to help others, does not like to study, likes to play alone. 
-                    love to drive I really like the engine. and i like studying About computers a lot, such as graphics work, creating anything.</p>
-                    <p class="text-center">Email: <a href="mailto: prapawin.chan@bumail.net">
-                    prapawin.chan@bumail.net</a></p>
-              </div>
-              <div class="col">
-                    <img src="images/prapawin-modified.png" width="60%" class="img-thumbnail mx-auto d-block" style="background-color:rgb(6, 12, 15)">
-              </div>
-              <div class="col">
-                <th>
-                    <h2>Details</h2>
-                    <h6>Name:</h6>
-                        <p>Prapawin chanviboonsi</p>
-                    <h6>Location:</h6>
-                        <p>Thailand</p>
-                    <h6>Social Media:</h6>
-                    <!-- Reference Social Media: https://www.w3schools.com/icons/icons_reference.asp-->
-                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                    <p><a href="https://www.facebook.com/Prapawinz" class="fa fa-facebook-square" style="font-size: 40px; color:blue;">
-                    <a href="https://www.instagram.com/parpawin_win/?hl=th" class="fa fa-instagram" style="font-size: 40px; color:rgb(163, 53, 139);"></a></p>
-                </th>
-              </div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="profile.css">
+        <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+          <div class="container">
+            <a href="index.html" class="navbar-brand">PORTFOLIO</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar1">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbar1" class="collapse navbar-collapse">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a href="profile.html" class="nav-link">Profile</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#Experiences" class="nav-link">Experiences</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#Abilitis" class="nav-link">Abilitis</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#Contact" class="nav-link">Contact</a>
+                </li>
+                <form class="d-flex">
+                  <input type="text" class="form-control me-2" placeholder="">
+                  <input type="submit" value="Search" class="btn btn-outline-primary">
+                </form>
+              </ul>
             </div>
-            <hr>
-            <p class="text-center">⭕2021 prapawin⭕</p>    
+          </div>
+        </nav>
+        <div class="home">
+            <div class="home-content">
+                <img src="imges/47183450_968905226634138_6408439914026762240_n.jpg" style="width: 540px; height: 450px; border-radius: 3.5px;" class="rounded mx-auto d-block" alt="...">
+                <br>
+                <br>
+                <h1>About Me</h1>
+                <span class="line"></span>
+                <p>Hello, my name is Prapawin chanviboonsi, 19 years old, now studying at Bangkok University. 
+                    I'm funny, but not always friendly. Likes to help others, does not like to study, likes to play alone. love to drive I really like the engine. 
+                    and i like studying About computers a lot, such as graphics work, creating anything.</p>
+            </div>
+        </div>
+          <!-- หน้า Experiences -->
+      <section id="Experiences">
+        <div class="section-need">
+            <h2 class="h2-exp">Experiences</h2>
+            <figure class="text-center">
+                <blockquote class="blockquote">
+                    <br>
+                    <br>
+                    <h3 class="ul-edu">Education</h3>
+                    <span class="line"></span>
+                </blockquote>
+               <ul class="ul-edu">
+                    <li>
+                    ม.1-3 โรงเรียนพระหฤทัยนนทบุรี <cite title="Source Title"></cite>
+                    </li>
+                    <li>
+                    ปวช.1-3 วิทยาลัยเทคโนโลยีสยามบริหารธุรกิจ นนทบุรี <cite title="Source Title"></cite>
+                </li>
+                <li>
+                    มหาลัย ปี 1-2 มหาลัยกรุงเทพ <cite title="Source Title"></cite>
+                </li>
+            </ul>
+            </figure>
+                <br>
+            <figure class="text-center">
+              <blockquote class="blockquote">
+                <h3 class="ul-edu">Experience / Internship</h3>
+                <span class="line"></span>
+                <br>
+              </blockquote>
+              <ul class="ul-edu">
+                <li>
+                    Bright TV - หน้าที่ ตัดต่อและทำกราฟิกดีไซน์ <cite title="Source Title"></cite>
+                </li>
+            </ul>
+        </div>
+      </section>
 
-    <!-- Bootstrap JS -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-  </body>
-</div>
+          <!-- หน้า Abilitis -->
+          <section id="Abilitis">
+        <div class="services">
+            <h2>Abilitis</h2>
+            <span class="line"></span>
+                <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <p class="text-center">
+                          <img src="imges/Photoshop_CC_icon.png" style="width: 18px; height: 18px; border-radius: 3.5px;">
+                          <i class="i-adobe"> Adobe photoshop</i> 🟡🟡🟡🟡🟡
+                      </p>
+                      </div>
+                      <div class="col">
+                        <p class="text-center">
+                          <img src="imges/AdobeIllustrator.png" style="width: 18px; height: 18px; border-radius: 3.5px;">
+                          <i class="i-adobe"> Adobe Illustrator</i> 🟡🟡🟡🟡🟡
+                      </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <p class="text-center">
+                          <img src="imges/Adobe InDesign.png" style="width: 18px; height: 18px; border-radius: 3.5px;">
+                          <i class="i-adobe"> Adobe InDesign</i> 🟡🟡🟡🟡🟡
+                      </p>
+                      </div>
+                      <div class="col">
+                        <p class="text-center">
+                          <img src="imges/flash.png" style="width: 18px; height: 18px; border-radius: 3.5px;">
+                          <i class="i-adobe">  Adobe Flash</i> 🟡🟡🟡🟡🟡
+                      </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <p class="text-center">
+                          <img src="imges/Adobe Premiere.jpg" style="width: 18px; height: 18px; border-radius: 3.5px;">
+                          <i class="i-adobe">  Adobe Premiere</i> 🟡🟡🟡🟡🟡
+                      </p>
+                      </div>
+                      <div class="col">
+                        <p class="text-center">
+                          <img src="imges/Adobe Lightroom.png" style="width: 18px; height: 18px; border-radius: 3.5px;">
+                          <i class="i-adobe"> Adobe Lightroom</i> 🟡🟡🟡🟡🟡
+                      </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <p class="text-center">
+                          <img src="imges/Adobe Effect.png" style="width: 18px; height: 18px; border-radius: 3.5px;">
+                          <i class="i-adobe">  adobe Effect</i> 🟡🟡🟡🟡🟡
+                      </p>
+                      </div>
+                      <div class="col">
+                        <p class="text-center">
+                          <img src="imges/kisspng-sketchup-symbol-logo-3d-computer-graphics-sketch-5abf3b4f1b2561.7314092415224819991112.png" style="width: 18px; height: 18px; border-radius: 3.5px;">
+                          <i class="i-adobe">  SketchUp</i> 🟡🟡🟡🟡🟡
+                      </p>
+                      </div>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <hr>
+              </section>
+
+
+          <!-- หน้า Contact -->
+          <section id="Contact">
+        <div class="div-contact" style="text-align: center;">
+            <h2>Contact</h2>
+                   <span class="line"></span>
+                   <form action="mailto:prapawin.chan@bumail.net" method="POST" enctype="text/plain">
+                    <label> Your Name: </label>
+                    <input type="text" name="yourname" value="">
+                    <br>
+                    <br>
+                    <br>
+                    <label> Your Email: </label>
+                    <input type="email" name="youremail" value="">
+                    <br>
+                    <br>
+                    <label> Your Message </label>
+                    <br>
+                    <textarea name="Your Message" cols="30" rows="10"></textarea>
+                    <br>
+                    <input type="submit" class="btn btn-primary btn-lg" name="">
+                </form>
+                <br>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <p><a href="https://www.facebook.com/Prapawinz" class="fa fa-facebook-square" style="font-size: 40px; color:blue;">
+                <a href="https://www.instagram.com/parpawin_win/?hl=th" class="fa fa-instagram" style="font-size: 40px; color:rgb(163, 53, 139);"></a></p>
+                <p>Email: <a href="mailto: prapawin.chan@bumail.net">
+                    prapawin.chan@bumail.net</a></p>
+                    <hr>
+                    &copy; 2021 prapawin &copy;
+                </div>
+            </section>
+      
+ <!-- Bootstrap JS -->
+ <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
